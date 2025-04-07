@@ -1,0 +1,84 @@
+# 🛠️ SIBO - Sistema Integrado de Bodega de Herramientas y Repuestos
+
+**SIBO** es un sistema web modular desarrollado en PHP y MySQL para la gestión de herramientas, repuestos, máquinas y movimientos relacionados a maquinaria pesada. Está diseñado para ofrecer una interfaz clara y funciones diferenciadas para usuarios regulares y administradores.
+
+---
+
+## 📦 Estructura del Proyecto
+
+
+---
+
+## 🧰 Tecnologías Utilizadas
+
+- **PHP 8.x**
+- **MySQL/MariaDB**
+- **HTML5 + CSS3**
+- **JavaScript (mínimo uso en formularios)**
+- **XAMPP / Apache**
+- Arquitectura **modular** con funciones separadas por carpeta
+
+---
+
+## 🔐 Tipos de Usuarios
+
+### 👤 Usuario Regular
+- Solo puede **ver** herramientas, repuestos, máquinas y movimientos
+- No puede modificar información
+- Accede a `user_dashboard.php`
+
+### 🛡️ Administrador
+- Puede **agregar y eliminar** registros en todas las tablas
+- Puede **asignar recursos** a usuarios mediante la sección "Movimientos"
+- Accede a `admin_dashboard.php`
+
+---
+
+## 🧪 Usuarios de Prueba
+
+| Nombre             | Cédula | Rol       |
+|--------------------|--------|-----------|
+| Admin de prueba    | 111    | admin     |
+| Usuario de prueba  | 222    | usuario   |
+
+---
+
+## 🛠️ Instalación y Configuración
+
+1. Clonar o copiar el proyecto dentro de la carpeta `htdocs/` de XAMPP
+2. Crear la base de datos `sibo` desde phpMyAdmin
+3. Importar el archivo `sibo.sql` incluido en el proyecto
+4. Configurar la conexión a base de datos en `src/db/config.php`
+5. Iniciar Apache y MySQL desde el panel de XAMPP
+6. Acceder al sistema desde:  
+
+
+
+---
+
+## ✅ Funcionalidades Principales
+
+- Login y sesión con roles diferenciados
+- Dashboards dinámicos con conteo de registros en tiempo real
+- Módulos CRUD para:
+- Herramientas
+- Repuestos
+- Máquinas
+- Usuarios
+- Registro de asignaciones mediante el módulo de **Movimientos**
+- Diseño responsivo y profesional para presentación
+
+---
+
+## 📌 Observaciones Finales
+
+- El sistema está preparado para ser fácilmente ampliado.
+- Todo el código está estructurado para mantener **separación de lógica**, estilos y conexión a datos.
+- Se recomienda mantener los nombres de archivos y carpetas tal cual para evitar errores de ruta.
+
+---
+
+## 👨‍💻 Autor
+
+Proyecto desarrollado como entrega académica por [lesther Barrantes Valverde] 💻  
+Para cualquier duda o mejora, podés modificar y adaptar libremente este sistema.

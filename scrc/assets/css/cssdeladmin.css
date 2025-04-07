@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+/* Header profesional */
+header {
+    background: #fff;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    letter-spacing: 8px;
+    color: #000;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Menú limpio */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 12px 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Contenido principal profesional */
+main {
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Eliminamos el h2 de "Panel" como pediste */
+
+/* Tarjetas modernas */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    display: block;
+    text-decoration: none !important;
+    color: #000 !important;
+    cursor: pointer;
+
+    background-color: #ffffff;
+    padding: 35px 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 34px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Bordes laterales con colores */
+.herramientas  { border-left: 6px solid #007bff; }
+.maquinas      { border-left: 6px solid #28a745; }
+.repuestos     { border-left: 6px solid #ffc107; }
+.usuarios      { border-left: 6px solid #6f42c1; }
+.movimientos   { border-left: 6px solid #dc3545; }
+
+/* Actividad reciente */
+.actividad {
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
+}
+
+.actividad h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.actividad p {
+    color: #666;
+}
+
+
+
+
+
